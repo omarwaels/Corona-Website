@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@800&display=swap");
+nav div ul li a {
+  text-decoration: none;
+  color: black;
+  font-weight: 650;
+}
+nav div ul li a:active {
+  background-color: blue;
+}
+nav a.router-link-exact-active:hover {
+  background-color: transparent;
+}
+.titleFont {
+  color: rgb(2, 117, 216);
+  font-weight: 500;
+  font-size: 1.5em;
+}
+.subTitleFont {
+  font-family: "Montserrat Alternates", sans-serif;
+  color: #3f5a88;
+
+  font-size: 1.5em;
+}
+.boxOfAnchors {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-left: auto;
+  width: 400px;
+
+  border: 1px solid rgba(100, 100, 111, 0.2) y;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.anchorbox {
+  text-decoration: none;
+  width: 100%;
+  padding: 20px 0;
+  padding-left: 40px;
+
+  border-bottom: 1px solid rgba(100, 100, 111, 0.2);
+}

@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@800&display=swap");
+
 nav div ul li a {
   text-decoration: none;
   color: black;
@@ -31,11 +32,84 @@ nav a.router-link-exact-active:hover {
   border: 1px solid rgba(100, 100, 111, 0.2) y;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
-.anchorbox {
+.anchorInBox {
   text-decoration: none;
   width: 100%;
   padding: 20px 0;
   padding-left: 40px;
 
   border-bottom: 1px solid rgba(100, 100, 111, 0.2);
+}
+
+.imgOutCard {
+  position: absolute;
+  right: 10px;
+  width: 90px;
+  top: -45px;
+  box-shadow: rgba(2, 117, 216, 0.2) 0px 7px 29px 0px;
+}
+div.card {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.acordionBoxes {
+  width: 90%;
+  border: 1px solid gray;
+  margin-bottom: 20px;
+  padding: 12px 20px;
+}
+
+/* Shared */
+.loginBtn {
+  box-sizing: border-box;
+  position: relative;
+  /* width: 13em;  - apply for fixed size */
+  margin: 0.2em;
+  padding: 5px 20px;
+  border: none;
+  text-align: left;
+  line-height: 34px;
+  white-space: nowrap;
+  border-radius: 0.2em;
+  font-size: 16px;
+  color: #fff;
+}
+.loginBtn:before {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 34px;
+  height: 100%;
+}
+.loginBtn:focus {
+  outline: none;
+}
+.loginBtn:active {
+  box-shadow: inset 0 0 0 32px rgba(0, 0, 0, 0.1);
+}
+
+/* Facebook */
+.loginBtn--facebook {
+  background-color: #4c69ba;
+  background-image: linear-gradient(#4c69ba, #3b55a0);
+  /*font-family: "Helvetica neue", Helvetica Neue, Helvetica, Arial, sans-serif;*/
+  text-shadow: 0 -1px 0 #354c8c;
+}
+
+.loginBtn--facebook:hover,
+.loginBtn--facebook:focus {
+  background-color: #5b7bd5;
+  background-image: linear-gradient(#5b7bd5, #4864b1);
+}
+
+/* Google */
+.loginBtn--google {
+  /*font-family: "Roboto", Roboto, arial, sans-serif;*/
+  background: #dd4b39;
+}
+
+.loginBtn--google:hover,
+.loginBtn--google:focus {
+  background: #e74b37;
 }

@@ -5,9 +5,7 @@ nav div ul li a {
   color: black;
   font-weight: 650;
 }
-nav div ul li a:active {
-  background-color: blue;
-}
+
 nav a.router-link-exact-active:hover {
   background-color: transparent;
 }

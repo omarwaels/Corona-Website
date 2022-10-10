@@ -28,7 +28,16 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <nav class="navbar bg-light">
+    <nav
+      class="navbar"
+      style="
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        width: 100vw;
+        background-color: white;
+      "
+    >
       <div class="container">
         <a class="navbar-brand" href="#">
           <img
@@ -43,21 +52,28 @@
           class="d-flex justify-content-between align-items-center ms-auto mb-0"
           style="list-style-type: none"
         >
-          <li><a href="temp.html" class="me-4 px-2">Home</a></li>
-          <li><a href="" class="me-4 px-2">About Corona</a></li>
-          <li><a href="" class="me-4 px-2">Symptoms</a></li>
-          <li><a href="" class="me-4 px-2">Prevention</a></li>
-          <li><a href="" class="me-4 px-2">Treatment</a></li>
-          <li><a href="" class="me-4 px-2">FAQ</a></li>
-          <li><a href="" class="me-4 px-2">News</a></li>
-          <a class="btn btn-primary rounded-pill" href="#" role="button"
+          <li><a href="#home" class="me-4 px-2">Home</a></li>
+          <li><a href="#aboutCovid" class="me-4 px-2">About Corona</a></li>
+          <li><a href="#symptoms" class="me-4 px-2">Symptoms</a></li>
+          <li><a href="#protection" class="me-4 px-2">Prevention</a></li>
+          <li><a href="#treatment" class="me-4 px-2">Treatment</a></li>
+          <li><a href="#faq" class="me-4 px-2">FAQ</a></li>
+          <li><a href="#news" class="me-4 px-2">News</a></li>
+          <a
+            class="btn btn-primary rounded-pill"
+            href="#doAndDont"
+            role="button"
             >&nbsp;&nbsp;Do & Don't&nbsp;&nbsp;</a
           >
         </ul>
       </div>
     </nav>
 
-    <section style="background-image: url(./imgs/shape-a.png)">
+    <section
+      id="home"
+      class="section"
+      style="background-image: url(./imgs/shape-a.png)"
+    >
       <div class="container">
         <div class="row mt-5">
           <div class="col-5 mt-5">
@@ -120,7 +136,7 @@
       </div>
     </section>
 
-    <section class="container p-0 mb-5">
+    <section id="aboutCovid" class="container pt-5 mb-5 section">
       <div class="row ms-3">
         <div class="col-6">
           <div class="titleFont">ABOUT THE DISEASE</div>
@@ -261,12 +277,14 @@
         href="#"
         role="button"
         style="margin-top: 80px"
-        ><i class="fa-solid fa-circle-question"></i>&nbsp;&nbsp;Have question
-        about spreading?&nbsp;&nbsp;</a
+        ><i id="symptoms" class="fa-solid fa-circle-question"></i
+        >&nbsp;&nbsp;Have question about spreading?&nbsp;&nbsp;</a
       >
     </section>
 
-    <section class="d-flex flex-column align-items-center my-5 container">
+    <section
+      class="d-flex flex-column align-items-center my-5 container section"
+    >
       <div class="titleFont my-1">What are the Symptoms of Covid-19?</div>
       <div class="subTitleFont my-2 mb-4">Symptoms of CORONA virus</div>
       <div class="text-center mb-5" style="margin: 0 200px">
@@ -343,10 +361,11 @@
     </section>
 
     <section
-      class="d-flex flex-column align-items-center my-5 containerfluid"
+      id="protection"
+      class="section d-flex flex-column align-items-center my-5 containerfluid pt-5"
       style="background-color: #f7f9fe"
     >
-      <div class="titleFont my-1">How to protectt yourself?</div>
+      <div class="titleFont my-1 mt-5">How to protect yourself?</div>
       <div class="subTitleFont my-2 mb-4">Prevention and advice</div>
       <div class="text-center mb-5" style="margin: 0 200px">
         Because its new illness , we dont know exactly how corona virus spread
@@ -540,7 +559,7 @@
     </section>
 
     <section
-      class="d-flex flex-column align-items-center my-5 containerfluid"
+      class="d-flex flex-column align-items-center mt-5 containerfluid"
       style="background-color: #f7f9fe"
     >
       <div class="subTitleFont mt-5 mb-2">Follow steps to wash your hands</div>
@@ -657,7 +676,11 @@
         </div>
       </div>
       <div class="d-flex align-items-center mb-5" style="margin-top: 50px">
-        <a class="btn btn-primary rounded-pill ms-3" href="#" role="button"
+        <a
+          id="treatment"
+          class="btn btn-primary rounded-pill ms-3"
+          href="#"
+          role="button"
           >&nbsp;&nbsp;Check How you wash hand ?&nbsp;&nbsp;&nbsp;&nbsp;<i
             class="fa-solid fa-arrow-right ms-2"
           ></i
@@ -669,7 +692,7 @@
     </section>
 
     <section
-      class="containerfluid"
+      class="containerfluid section"
       style="
         background-image: url(imgs/shape-a.png),
           linear-gradient(
@@ -737,7 +760,8 @@
     </section>
 
     <section
-      class="d-flex flex-column align-items-center mb-0 containerfluid"
+      id="doAndDont"
+      class="d-flex flex-column align-items-center mb-0 containerfluid pt-5"
       style="background-color: #f7f9fe"
     >
       <div class="mt-5 mb-2 text-primary fs-5" style="font-weight: 600">
@@ -911,7 +935,8 @@
     </section>
 
     <section
-      class="d-flex flex-column align-items-center mb-0 containerfluid"
+      id="faq"
+      class="section d-flex flex-column align-items-center mb-0 pt-5 containerfluid"
       style="background-color: #f7f9fe"
     >
       <div class="mt-5 mb-2 text-primary fs-5" style="font-weight: 600">
@@ -1098,7 +1123,8 @@
     </section>
 
     <section
-      class="d-flex flex-column align-items-center mb-0 containerfluid pb-5"
+      id="news"
+      class="section d-flex flex-column align-items-center mb-0 containerfluid py-5"
       style="background-color: #f7f9fe"
     >
       <div class="mt-5 mb-2 text-primary fs-5" style="font-weight: 600">
@@ -1251,5 +1277,6 @@
         </div>
       </div>
     </section>
+    <script src="script.js"></script>
   </body>
 </html>
